@@ -4,39 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>純萃研製所 保健品產品介紹</title>
-  <style>
+    <style>
     :root {
-      --bg: #fefbf3;
-      --text: #1d2a1f;
-      --accent: #3f693d;
-      --muted: #5b6a58;
-      --card-bg: #ffffff;
-      --shadow: rgba(50, 72, 53, 0.13);
+      --bg: #f8f4e7;
+      --text: #1f3f2d;
+      --accent: #3f6d46;
+      --muted: #5f6e61;
+      --card: #ffffff;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); }
-    .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
-    .headline {
-      display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: end;
-      border-bottom: 4px solid var(--accent); margin-bottom: 18px; padding-bottom: 10px;
-    }
-    .headline h1 { margin: 0; font-size: clamp(36px, 6vw, 72px); letter-spacing: .04em; line-height: 1.05; font-weight: 900; }
-    .headline p { margin: 0; font-size: 1rem; color: var(--muted); }
+    body { margin: 0; font-family: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); padding: 0 16px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px 0; }
+    .headline { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 4px solid var(--accent); margin-bottom: 18px; padding-bottom: 10px; }
+    .headline h1 { margin: 0; font-size: clamp(32px, 8vw, 72px); letter-spacing: .04em; line-height: 1.05; font-weight: 900; }
     .patch { font-family: 'Noto Serif TC', serif; color: #fff; background: var(--accent); padding: 6px 14px; font-size: .85rem; font-weight: 700; letter-spacing: .05em; }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
-    .card { position: relative; background: var(--card-bg); color: var(--text); padding: 22px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 14px; overflow: hidden; border: 1px solid #cad4c5; box-shadow: 0 8px 24px var(--shadow); }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .card { position: relative; background: var(--card); color: var(--text); padding: 22px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 14px; overflow: hidden; border: 1px solid #c9d5c2; box-shadow: 0 8px 24px rgba(79,109,53,.2); }
     .card::before { content: ''; position: absolute; top: -16px; right: -16px; width: 116px; height: 116px; background: rgba(63,105,61,.35); opacity: .9; transform: rotate(30deg); }
     .card h2 { margin: 0 0 8px; font-size: 1.2rem; line-height: 1.1; font-weight: 800; z-index: 1; }
     .card p { margin: 0 0 6px; z-index: 1; color: #4a5b4c; }
-    .card a { z-index: 1; margin-top: 10px; width: max-content; text-decoration: none; color: #fff; background: var(--accent); padding: 8px 14px; border-radius: 8px; font-size: .9rem; font-weight: 700; }
+    .card a { z-index: 1; margin-top: 10px; width: max-content; text-decoration: none; color: #fff; background: var(--accent); padding: 10px 14px; border-radius: 10px; font-size: 1rem; font-weight: 700; }
     .card .tag { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .04em; z-index: 1; }
-
-    .split { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: start; margin-top: 24px; }
-    .split .box { background: #f7f8f8; border: 2px solid #111; border-radius: 16px; padding: 16px; }
-    .split h2 { margin: 0 0 10px; font-size: 1.1rem; letter-spacing: .02em; }
-    @media (min-width: 940px) {
-      .split { grid-template-columns: 2fr 1fr; }
+    @media (max-width: 767px) {
+      body { padding: 0 12px; }
+      .headline { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .headline h1 { font-size: clamp(28px, 10vw, 40px); }
+      .grid { grid-template-columns: 1fr; }
+      .card { padding: 16px; min-height: auto; }
+      .card a { padding: 12px 18px; font-size: 1.05rem; }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .card{padding:18px;}
+      .card a{font-size:1rem;}
+    }
+    @media (min-width: 1024px) {
+      .grid { grid-template-columns: repeat(4,1fr); }
     }
   </style>
 </head>
@@ -62,4 +65,5 @@
   </div>
 </body>
 </html>
+
 
