@@ -1,49 +1,50 @@
-﻿<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>純萃研製所</title>
-  <style>
-    :root{--bg:#f9f6ed;--text:#1f3d2e;--accent:#3e6b45;--muted:#5f6f5d;--card:#ffffff;}
-    *{box-sizing:border-box;}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans TC','Segoe UI',sans-serif;}
-    .wrap{max-width:1200px;margin:0 auto;padding:20px 16px;}
-    .header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px;}
-    .header h1{margin:0;font-size:clamp(28px,7vw,56px);line-height:1.05;font-weight:900;color:var(--accent);}
-    .header p{margin:0;color:var(--muted);font-size:1rem;}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-    .card{background:var(--card);border:1px solid #c9d5c2;border-radius:14px;box-shadow:0 8px 18px rgba(77,102,78,.18);padding:14px 14px 16px;}
-    .card h2{margin:0 0 8px;font-size:1.15rem;color:var(--text);font-weight:800;}
-    .card p{margin:0 0 10px;color:var(--muted);line-height:1.5;font-size:0.95rem;}
-    .card .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-size:0.95rem;font-weight:700;}
-
-    @media(max-width:1023px){.grid{grid-template-columns:repeat(2,1fr);}}
-    @media(max-width:767px){
-      .wrap{padding:14px;}
-      .grid{grid-template-columns:1fr;}
-      .card{padding:16px;}
-      .card h2{font-size:1.1rem;}
-      .card p{font-size:0.92rem;}
-      .card .btn{width:100%;text-align:center;padding:12px;}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="header">
-      <h1>純萃研製所</h1>
-      <p>自然健康保健品，全產品一覽。</p>
-    </div>
-    <div class="grid">
-      <article class="card"><h2>EPA精粹深海魚油</h2><p>高純度EPA，心血管保養與抗發炎首選。</p><a class="btn" href="魚油.html">檢視詳情</a></article>
-      <article class="card"><h2>舒立晶葉黃素</h2><p>3C護眼配方，長時間用眼更舒適。</p><a class="btn" href="葉黃素.html">檢視詳情</a></article>
-      <article class="card"><h2>御品薑黃補精</h2><p>護肝抗氧化，外食與應酬族日常補給。</p><a class="btn" href="薑黃補精.html">檢視詳情</a></article>
-      <article class="card"><h2>舒立鈣</h2><p>骨質保養、吸收升級，適合中老年。</p><a class="btn" href="舒立鈣.html">檢視詳情</a></article>
-      <article class="card"><h2>舒關</h2><p>多成分關節配方，支援靈活活動。</p><a class="btn" href="舒關.html">檢視詳情</a></article>
-      <article class="card"><h2>DDS-1®益生菌</h2><p>120億活菌，腸道調整與消化健護。</p><a class="btn" href="益生菌.html">檢視詳情</a></article>
-      <article class="card"><h2>SUPER晚安乳清蛋白</h2><p>助眠加蛋白補充，健身與修復兼顧。</p><a class="btn" href="乳清蛋白.html">檢視詳情</a></article>
-    </div>
-  </div>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>純萃研製所</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#F7F4EF;color:#2C2C2C;font-family:'Noto Sans TC',sans-serif;}
+a{text-decoration:none;color:inherit;}
+nav{position:fixed;top:0;left:0;width:100%;z-index:999;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border-bottom:1px solid #E3E0DA;}
+nav .bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;}
+nav .brand{font-family:'Noto Serif TC',serif;font-size:1.22rem;font-weight:800;color:#2C2C2C;}
+body{padding-top:64px;}
+.container{max-width:1200px;margin:0 auto;padding:20px 16px 32px;}
+.hero{background:#FDFCFA;border:1px solid #EAE6DE;border-radius:16px;padding:34px 20px 28px;margin-bottom:24px;box-shadow:0 10px 22px rgba(44,44,44,0.06);}
+.hero h1{margin:0;font-family:'Noto Serif TC',serif;font-size:clamp(2rem,4vw,3.4rem);color:#2C2C2C;}
+.hero p{margin:10px 0 0;color:#5F5F5F;font-size:1.06rem;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.card{background:#FDFCFA;border:1px solid #EAE6DE;border-radius:14px;padding:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative;}
+.card:hover{transform:translateY(-8px);box-shadow:0 14px 24px rgba(139,158,138,.18);border-color:#8B9E8A;}
+.card::before{content:'';position:absolute;top:0;left:0;width:0;height:4px;background:#8B9E8A;transition:width .25s ease;}
+.card:hover::before{width:100%;}
+.card .category{font-size:0.84rem;color:#6D7A6D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;}
+.card h2{margin:0 0 10px;font-family:'Noto Serif TC',serif;font-size:1.4rem;color:#2C2C2C;}
+.card p{margin:0 0 12px;font-size:0.95rem;line-height:1.55;color:#3C3C3C;}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;}
+.card .tag{background:#E9F1E8;color:#5E7A61;padding:4px 8px;border-radius:999px;font-size:0.78rem;}
+.card .btn{display:inline-block;margin-top:10px;padding:8px 14px;border-radius:10px;font-weight:700;color:#fff;background:#8B9E8A;border:1px solid #7D8D77;}
+section.separator{margin-top:26px;border-top:1px solid #E8E4DC;padding-top:20px;color:#5F5F5F;font-size:0.93rem;}
+@media(max-width:1024px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:767px){.grid{grid-template-columns:1fr;}.container{padding:14px 12px 22px;}.hero{padding:26px 16px 20px;}.card h2{font-size:1.25rem;}.hero h1{font-size:2rem;}}
+</style>
+</head><body>
+<nav><div class="bar"><div class="brand">純萃研製所</div><div><a href="#products" style="font-weight:700;color:#2C2C2C;">產品一覽</a></div></div></nav>
+<main class="container">
+<div class="hero"><h1>純萃研製所 | 精準補給、自然保養</h1><p>採用嚴選原料、科學配方，以台灣友善價格提供7款日常保健品。</p></div>
+<div id="products" class="grid">
+<article class="card"><div class="category">心血管保健</div><h2>EPA精粹深海魚油</h2><p>高純度EPA 500mg，守護心腦血管</p><div class="tags"><span class="tag">中年族群</span><span class="tag">三高族群</span></div><a class="btn" href="魚油.html">查看詳情</a></article>
+<article class="card"><div class="category">護眼保健</div><h2>舒立晶葉黃素</h2><p>AREDS2黃金比例，雙色素護視力</p><div class="tags"><span class="tag">3C族</span><span class="tag">學生</span></div><a class="btn" href="葉黃素.html">查看詳情</a></article>
+<article class="card"><div class="category">抗氧化護肝</div><h2>御品薑黃補精</h2><p>微米薑黃素+三菱OPITAC穀胱甘肽</p><div class="tags"><span class="tag">外食族</span><span class="tag">飲酒族</span></div><a class="btn" href="薑黃補精.html">查看詳情</a></article>
+<article class="card"><div class="category">骨本保健</div><h2>舒立鈣</h2><p>多重鈣源+5色蔬果SOD，吸收更好</p><div class="tags"><span class="tag">停經後女性</span><span class="tag">銀髮族</span></div><a class="btn" href="舒立鈣.html">查看詳情</a></article>
+<article class="card"><div class="category">關節靈活</div><h2>舒關（關節保健）</h2><p>BC Kolla2膠原蛋白+8大關節配方</p><div class="tags"><span class="tag">銀髮族</span><span class="tag">運動員</span></div><a class="btn" href="舒關.html">查看詳情</a></article>
+<article class="card"><div class="category">腸道調理</div><h2>DDS-1®嗜酸性乳酸桿菌</h2><p>120億活菌、常溫保存，修復腸道屏障</p><div class="tags"><span class="tag">腸胃敏感</span><span class="tag">便秘者</span></div><a class="btn" href="益生菌.html">查看詳情</a></article>
+<article class="card"><div class="category">睡眠與修復</div><h2>SUPER晚安乳清蛋白（紅藜燕麥口味）</h2><p>17g蛋白+GABA/色胺酸，運動+睡眠雙支援</p><div class="tags"><span class="tag">健身族</span><span class="tag">睡眠品質差者</span></div><a class="btn" href="乳清蛋白.html">查看詳情</a></article>
+</div>
+<section class="separator">
+<p>輕鬆按下「查看詳情」，即可掌握商品成分說明與適用建議。</p>
+</section>
+</main>
+</body></html>

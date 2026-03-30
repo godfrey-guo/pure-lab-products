@@ -1,47 +1,66 @@
-﻿<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>舒關 - 純萃研製所</title>
-  <style>
-    :root{--bg:#f8f4e7;--text:#1f3f2d;--accent:#3f6d46;--muted:#5f6e61;--card:#fff;}
-    *{box-sizing:border-box;}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans TC','Segoe UI',sans-serif;}
-    .wrap{max-width:1080px;margin:0 auto;padding:18px;}
-    a.back{display:inline-block;margin-bottom:14px;color:var(--accent);font-weight:700;text-decoration:none;}
-    .main{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;}
-    .content{background:var(--card);border:2px solid #c9d5c2;border-radius:14px;padding:20px;}
-    .title{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 10px;font-weight:900;}
-    .subtitle{font-size:1.05rem;color:var(--muted);margin:0 0 12px;}
-    .section{margin-top:14px;}
-    .section h2{font-size:1rem;margin:0 0 8px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
-    .section p,.section ul{margin:0;line-height:1.6;color:var(--text);}
-    .section ul{padding-left:18px;margin-top:8px;}
-    .section li{margin:6px 0;}
-    .btn{display:inline-block;margin-top:16px;padding:11px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;}
-    .photo{border:2px solid #c9d5c2;border-radius:14px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;padding:10px;}
-    .photo img{width:100%;height:auto;border-radius:12px;display:block;}
-    @media(max-width:767px){body{padding:0 12px;} .main{grid-template-columns:1fr;} .content{order:3;padding:16px;} .photo{order:2;margin-bottom:12px;padding:12px;} .title{font-size:clamp(24px,8vw,36px);} .subtitle{font-size:.95rem;} .btn{width:100%;text-align:center;padding:13px 14px;font-size:1rem;}}
-    @media(min-width:768px) and (max-width:1023px){ .main{grid-template-columns:1fr 1fr;} .title{font-size:clamp(26px,6vw,40px);} }
-    @media(min-width:1024px){ .main{grid-template-columns:1fr 1fr;} }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <a class="back" href="index.html">← 回首頁</a>
-    <div class="main">
-      <div class="photo"><img src="舒關-封面.png" alt="舒關" /></div>
-      <div class="content">
-        <h1 class="title">舒關</h1>
-        <p class="subtitle">關節補養、靈活守護</p>
-        <div class="section"><h2>產品功效</h2><p>多種關節養護成分，減少活動僵硬不適。</p></div>
-        <div class="section"><h2>成分</h2><ul><li>BC Kolla2膠原蛋白</li><li>葡萄糖胺</li><li>軟骨素</li><li>MSM</li></ul></div>
-        <div class="section"><h2>適用族群</h2><p>運動族、久站久坐、銀髮族</p></div>
-        <div class="section"><h2>購買方式</h2><p>請至蝦皮搜尋「純萃研製所 舒關」或私訊 LINE 訂購。</p></div>
-        <a class="btn" href="#">立即加入購物車</a>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>舒關（關節保健） - 純萃研製所</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#F7F4EF;color:#2C2C2C;font-family:'Noto Sans TC',sans-serif;}
+a{text-decoration:none;color:inherit;}
+nav{position:fixed;top:0;left:0;width:100%;z-index:999;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border-bottom:1px solid #E3E0DA;}
+nav .bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;}
+nav .brand{font-family:'Noto Serif TC',serif;font-size:1.22rem;font-weight:800;color:#2C2C2C;}
+body{padding-top:64px;}
+.container{max-width:1200px;margin:0 auto;padding:20px 16px 32px;}
+.hero{background:#FDFCFA;border:1px solid #EAE6DE;border-radius:16px;padding:34px 20px 28px;margin-bottom:24px;box-shadow:0 10px 22px rgba(44,44,44,0.06);}
+.hero h1{margin:0;font-family:'Noto Serif TC',serif;font-size:clamp(2rem,4vw,3.4rem);color:#2C2C2C;}
+.hero p{margin:10px 0 0;color:#5F5F5F;font-size:1.06rem;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.card{background:#FDFCFA;border:1px solid #EAE6DE;border-radius:14px;padding:16px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative;}
+.card:hover{transform:translateY(-8px);box-shadow:0 14px 24px rgba(139,158,138,.18);border-color:#8B9E8A;}
+.card::before{content:'';position:absolute;top:0;left:0;width:0;height:4px;background:#8B9E8A;transition:width .25s ease;}
+.card:hover::before{width:100%;}
+.card .category{font-size:0.84rem;color:#6D7A6D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;}
+.card h2{margin:0 0 10px;font-family:'Noto Serif TC',serif;font-size:1.4rem;color:#2C2C2C;}
+.card p{margin:0 0 12px;font-size:0.95rem;line-height:1.55;color:#3C3C3C;}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;}
+.card .tag{background:#E9F1E8;color:#5E7A61;padding:4px 8px;border-radius:999px;font-size:0.78rem;}
+.card .btn{display:inline-block;margin-top:10px;padding:8px 14px;border-radius:10px;font-weight:700;color:#fff;background:#8B9E8A;border:1px solid #7D8D77;}
+section.separator{margin-top:26px;border-top:1px solid #E8E4DC;padding-top:20px;color:#5F5F5F;font-size:0.93rem;}
+@media(max-width:1024px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:767px){.grid{grid-template-columns:1fr;}.container{padding:14px 12px 22px;}.hero{padding:26px 16px 20px;}.card h2{font-size:1.25rem;}.hero h1{font-size:2rem;}}
+
+.product-page{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;}
+.product-main{background:#FDFCFA;border:1px solid #EAE6DE;border-radius:16px;padding:26px;box-shadow:0 10px 18px rgba(44,44,44,.08);}
+.product-main .label{display:inline-block;padding:5px 10px;border-radius:999px;background:#E4E8E0;color:#5F6A5C;font-size:0.82rem;font-weight:700;margin-bottom:10px;text-transform:uppercase;}
+.product-main h1{font-family:'Noto Serif TC',serif;font-size:clamp(2rem,4vw,2.8rem);margin:10px 0 8px;}
+.product-main .subtitle{font-size:1.02rem;color:#5A5A5A;margin-bottom:18px;}
+.product-main h3{margin:18px 0 8px;font-family:'Noto Serif TC',serif;font-size:1.1rem;color:#2C2C2C;}
+.product-main ul{margin:0;padding-left:20px;line-height:1.7;color:#3C3C3C;}
+.product-main li{margin:8px 0;}
+.product-main .buy{margin-top:16px;display:inline-block;padding:12px 20px;background:#8B9E8A;color:#fff;border-radius:12px;font-weight:700;border:1px solid #7D8D77;}
+.product-hero{background:#F7F4EF;border:1px solid #EAE6DE;border-radius:16px;padding:22px;display:flex;align-items:center;justify-content:center;height:100%;}
+.product-hero img{width:100%;max-width:360px;border-radius:14px;box-shadow:0 12px 24px rgba(0,0,0,.1);}
+@media(max-width:1024px){.product-page{grid-template-columns:1fr;}.product-hero{order:-1;}}
+</style>
+</head><body>
+<nav><div class="bar"><div class="brand">純萃研製所</div><div><a href="index.html" style="font-weight:700;color:#2C2C2C;">← 返回首頁</a></div></div></nav>
+<main class="container">
+<div class="product-page">
+<div class="product-main">
+<div class="label">關節靈活</div>
+<h1>舒關（關節保健）</h1>
+<p class="subtitle">BC Kolla2膠原蛋白+8大關節配方</p>
+<h3>主要功效</h3>
+<ul><li>支撐軟骨、增強活動力</li><li>MSM+玻尿酸加乘</li><li>運動/久站保養必備</li></ul>
+<h3>成分重點</h3>
+<ul><li>BC Kolla2-II型膠原蛋白</li><li>葡萄糖胺</li><li>軟骨素</li><li>MSM</li><li>玻尿酸</li></ul>
+<h3>適用族群</h3>
+<p>銀髮族、運動員、久站久坐者</p>
+<a class="buy" href="#">立即選購</a>
+</div>
+<div class="product-hero"><img src="舒關-封面.png" alt="舒關（關節保健）" /></div>
+</div>
+<section class="separator"><p>純萃研製所致力提供成分透明、台灣在地安心品質，請搭配專業建議使用。</p></section>
+</main>
+</body></html>
