@@ -1,40 +1,67 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pure Lab 保健品產品介紹</title>
   <style>
-    :root { --bg:#fbfdf8; --text:#2d3e31; --accent:#6cbf94; --card:#ffffff; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Helvetica Neue", Arial, sans-serif; background:var(--bg); color:var(--text); }
-    .container { max-width:1100px; margin:0 auto; padding:20px; }
-    h1 { margin-top:0; color:#1b4d3b; }
-    .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-    .card { background:var(--card); border:1px solid #d7e7df; border-radius:12px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
-    .card h2 { margin:0 0 8px; font-size:1.2rem; color:#196141; }
-    .card p { margin:4px 0; font-size:0.95rem; line-height:1.5; }
-    .card a { display:inline-block; margin-top:12px; text-decoration:none; color:#fff; background:var(--accent); padding:8px 14px; border-radius:8px; font-weight:600; }
-    .note { margin-top:14px; font-size:0.87rem; color:#5b6d64; }
+    :root {
+      --bg: #fff;
+      --text: #111;
+      --accent: #ee7216;
+      --muted: #555;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    .headline {
+      display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: end;
+      border-bottom: 4px solid #111; margin-bottom: 18px; padding-bottom: 10px;
+    }
+    .headline h1 { margin: 0; font-size: clamp(36px, 6vw, 72px); letter-spacing: .02em; line-height: 1.05; font-weight: 900; }
+    .headline p { margin: 0; font-size: 1rem; color: var(--muted); }
+    .patch { font-family: 'Noto Serif TC', serif; color: #fff; background: #111; padding: 6px 14px; font-size: .85rem; font-weight: 700; letter-spacing: .05em; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .card { position: relative; background: #111; color: #fff; padding: 22px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 12px; overflow: hidden; }
+    .card::before { content: ''; position: absolute; top: -20px; right: -20px; width: 120px; height: 120px; background: var(--accent); opacity: .85; transform: rotate(30deg); }
+    .card h2 { margin: 0 0 8px; font-size: 1.2rem; line-height: 1.1; font-weight: 800; z-index: 1; }
+    .card p { margin: 0 0 6px; z-index: 1; }
+    .card a { z-index: 1; margin-top: 10px; width: max-content; text-decoration: none; color: #111; background: #fff; padding: 8px 14px; border-radius: 8px; font-size: .9rem; font-weight: 700; }
+    .card .tag { color: var(--accent); font-size: .82rem; font-weight: 700; text-transform: uppercase; z-index: 1; }
+
+    .split { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: start; margin-top: 24px; }
+    .split .box { background: #f7f8f8; border: 2px solid #111; border-radius: 16px; padding: 16px; }
+    .split h2 { margin: 0 0 10px; font-size: 1.1rem; letter-spacing: .02em; }
+    @media (min-width: 940px) {
+      .split { grid-template-columns: 2fr 1fr; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Pure Lab 保健品產品介紹</h1>
-    <p>清新風格、健康感，點擊進入產品詳頁 (手機/電腦皆可)。</p>
-
-    <div class="grid">
-      <article class="card"><h2>EPA精粹深海魚油</h2><p>心血管保健 / 抗發炎 / 高純度EPA</p><a href="魚油.html">查看商品</a></article>
-      <article class="card"><h2>舒立晶葉黃素</h2><p>護眼舒緩 / 10合1配方 / 長時間用眼</p><a href="葉黃素.html">查看商品</a></article>
-      <article class="card"><h2>御品薑黃補精</h2><p>護肝抗氧 / 補充能量 / 消化調整</p><a href="薑黃補精.html">查看商品</a></article>
-      <article class="card"><h2>舒立鈣</h2><p>補鈣保骨 / 吸收好 / 溫和配方</p><a href="舒立鈣.html">查看商品</a></article>
-      <article class="card"><h2>舒關</h2><p>關節潤滑 / 維持靈活 / 8大成分</p><a href="舒關.html">查看商品</a></article>
-      <article class="card"><h2>DDS-1益生菌</h2><p>腸道調整 / 120億活菌 / 常溫OK</p><a href="益生菌.html">查看商品</a></article>
-      <article class="card"><h2>SUPER晚安乳清蛋白</h2><p>蛋白補充 / 助眠恢復 / 健身首選</p><a href="乳清蛋白.html">查看商品</a></article>
+    <div class="headline">
+      <div>
+        <h1>Pure Lab<br>保健品選品</h1>
+        <p>聶永真式大膽排版 x 現代美感，健康專業新型態。</p>
+      </div>
+      <div class="patch">ALL PRODUCTS</div>
     </div>
 
-    <p class="note">提示：可依照需求自行替換成真實圖片與連結。</p>
+    <div class="grid">
+      <article class="card"><span class="tag">EPA魚油</span><h2>EPA精粹深海魚油</h2><p>高純度EPA 500mg，心血管保養首選。</p><a href="魚油.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">葉黃素</span><h2>舒立晶葉黃素</h2><p>長時間3C用眼的不二選擇。</p><a href="葉黃素.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">薑黃補精</span><h2>御品薑黃補精</h2><p>護肝抗氧化加消化調整。</p><a href="薑黃補精.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">舒立鈣</span><h2>舒立鈣</h2><p>骨質保養、吸收優化。</p><a href="舒立鈣.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">舒關</span><h2>舒關</h2><p>多成分關節保養配方。</p><a href="舒關.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">益生菌</span><h2>DDS-1®益生菌</h2><p>120億活菌，腸道調整。</p><a href="益生菌.html">檢視詳情</a></article>
+      <article class="card"><span class="tag">乳清蛋白</span><h2>SUPER晚安乳清蛋白</h2><p>蛋白補充兼具助眠修復。</p><a href="乳清蛋白.html">檢視詳情</a></article>
+    </div>
+
+    <div class="split">
+      <div class="box"><h2>設計理念</h2><p>大膽對比與不對稱版面，在一體的單頁與產品卡片中傳遞對「功能與形象」的視覺張力。保持健康感同時加入藝術層次。</p></div>
+      <div class="box"><h2>行動優先</h2><p>手機閱讀時改成單欄排列，保持視覺重點與段落節奏，同步保留桌機版的結構張力。</p></div>
+    </div>
   </div>
 </body>
 </html>

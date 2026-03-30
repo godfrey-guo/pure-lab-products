@@ -1,50 +1,73 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EPA精粹深海魚油 - Pure Lab</title>
   <style>
-    :root{--bg:#f8fdf7;--card:#fff;--text:#234030;--accent:#3f9d74;}
+    :root{--bg:#fff;--text:#111;--accent:#ee7216;--muted:#444;}
     *{box-sizing:border-box;}
-    body{margin:0;background:var(--bg);font-family: "PingFang TC", "Segoe UI", sans-serif;color:var(--text);}
-    .wrap{max-width:1050px;margin:0 auto;padding:18px;}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
-    .box{background:var(--card);border:1px solid #deede3;border-radius:12px;padding:16px;}
-    h1{margin-top:0;color:#1f583f;}
-    h2{margin:12px 0 8px;color:#20724d;}
-    p{margin:6px 0;line-height:1.5;}
-    ul{margin:8px 0;padding-left:18px;}
-    li{margin:5px 0;}
-    .btn{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;}
-    @media(max-width:900px){.row{grid-template-columns:1fr;}}
-    .img-placeholder{width:100%;height:0;padding-bottom:70%;background:#dff3e7;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#5f886f;font-size:1rem;text-align:center;}
+    body{margin:0;background:var(--bg);font-family:'Noto Sans TC', 'Segoe UI', sans-serif;color:var(--text);}
+    .wrap{max-width:1180px;margin:0 auto;padding:24px;}
+    .top{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;}
+    .top-left{padding:20px;border:2px solid #111;border-radius:16px;background:#fff;}
+    .top-left small{display:block;color:var(--accent);font-weight:800;margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;}
+    .top-left h1{margin:0 0 14px;font-size:clamp(32px,4.8vw,60px);line-height:1.05;letter-spacing:.01em;}
+    .top-left p{margin:10px 0;font-size:1rem;line-height:1.5;color:var(--muted);}
+    .top-left ul{padding-left:20px;margin:14px 0;}
+    .top-left li{margin:6px 0;}
+    .btn{display:inline-block; margin-top:14px; padding:10px 16px; background:#111; color:#fff; border-radius:8px; text-decoration:none; font-weight:700;}
+
+    .card{position:relative;border-radius:16px;overflow:hidden;border:2px solid #111;}
+    .card::after{content:'';position:absolute;top:14px;left:-16px;width:140px;height:140px;background:var(--accent);opacity:.8;transform:rotate(25deg);z-index:1;}
+    .card img{width:100%;height:auto;display:block;mix-blend-mode:multiply;}
+    .card .overlay{position:absolute;left:0;bottom:12px;padding:10px 14px;background:rgba(255,255,255,.92);border-top-right-radius:12px;z-index:2;}
+    .card .overlay p{margin:0;font-size:.95rem;font-weight:700;color:#111;}
+
+    .section{margin-top:24px;}
+    .section h2{margin:0 0 10px;font-size:1.2rem;letter-spacing:.02em;text-transform:uppercase;color:#111;}
+    .section .inner{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-height:210px;}
+    .panel{background:#f6f7f8;border:2px solid #111;border-radius:14px;padding:14px;}
+    .panel h3{margin-top:0;font-size:1rem;color:#111;}
+    .panel p{margin:8px 0;color:var(--muted);line-height:1.6;}
+
+    @media (max-width:900px){.top{grid-template-columns:1fr;} .section .inner{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <a href="index.html" style="text-decoration:none;color:#196449;font-weight:600;">← 回首頁</a>
-    <div class="row">
-      <div class="box">
-        <h1>EPA精粹深海魚油</h1>
-        <p>主打功效：護心血管、降三酸甘油酯、抗發炎、提升血脂調節。</p>
-        <h2>成分</h2>
-        <p>挪威VIVOMEGA專利rTG型魚油，純EPA 500mg (89.5%)，加強健康補給。</p>
-        <p>魚油專屬：
-          <ul><li>獨立鋁箔封裝，衛生更放心</li><li>防潮品質更穩定</li><li>一顆一顆隨身攜帶</li><li>吃多少拿多少，新鮮每一顆</li></ul>
-        </p>
-        <h2>適用族群</h2>
+    <a href="index.html" style="display:inline-block;margin-bottom:14px;color:#111;font-weight:700;text-decoration:none;">← 回首頁</a>
+    <div class="top">
+      <div class="top-left">
+        <small>EPA精粹深海魚油</small>
+        <h1>鋁箔獨立包裝・心血管防護</h1>
+        <p>融合聶永真式大膽排版與不對稱張力，運用黑白對比與鮮明橘色色塊，打造現代感保健品首選頁面。</p>
         <ul>
-          <li>中年族群、三高與心血管保養</li>
-          <li>應酬多、餐飲偏油、生活緊湊</li>
-          <li>希望提升日常抗發炎能力者</li>
+          <li>324mg EPA 以上、純 rTG 魚油</li>
+          <li>SGS 檢驗、抗發炎保養</li>
+          <li>適合中年、三高、外食族</li>
         </ul>
-        <h2>購買方式</h2>
-        <p>到蝦皮搜尋「純萃研製所 EPA精粹深海魚油」，或私訊 LINE / FB 直接下單。</p>
-        <a class="btn" href="#">立即購買</a>
+        <a class="btn" href="#">立即選購 60顆</a>
       </div>
-      <div class="box">
-        <img src="fish-oil.png.png" alt="EPA精粹深海魚油" style="width:100%;height:auto;border-radius:10px;object-fit:cover;" />
+      <div class="card">
+        <img src="fish-oil.png.png" alt="EPA精粹深海魚油" />
+        <div class="overlay"><p>白底產品圖完美融合</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>產品資訊</h2>
+      <div class="inner">
+        <div class="panel"><h3>主打功效</h3><p>護心血管、降三酸甘油酯、抗發炎、提升血脂調節穩定性。</p></div>
+        <div class="panel"><h3>成分</h3><p>挪威VIVOMEGA專利rTG型魚油、EPA500mg(89.5%)、維生素E、乳化成分。</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>適用族群 / 購買方式</h2>
+      <div class="inner">
+        <div class="panel"><h3>適用族群</h3><p>中年族群、三高族群、生活飲食油膩者、想在日常保健中加入心血管守護。</p></div>
+        <div class="panel"><h3>購買方式</h3><p>蝦皮搜尋「純萃研製所 EPA精粹深海魚油」。亦可 LINE 私訊下單，店家提供團購與宅配。</p></div>
       </div>
     </div>
   </div>
