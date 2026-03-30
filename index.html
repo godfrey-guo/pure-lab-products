@@ -6,29 +6,31 @@
   <title>Pure Lab 保健品產品介紹</title>
   <style>
     :root {
-      --bg: #fff;
-      --text: #111;
-      --accent: #ee7216;
-      --muted: #555;
+      --bg: #fefbf3;
+      --text: #1d2a1f;
+      --accent: #3f693d;
+      --muted: #5b6a58;
+      --card-bg: #ffffff;
+      --shadow: rgba(50, 72, 53, 0.13);
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); }
     .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
     .headline {
       display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: end;
-      border-bottom: 4px solid #111; margin-bottom: 18px; padding-bottom: 10px;
+      border-bottom: 4px solid var(--accent); margin-bottom: 18px; padding-bottom: 10px;
     }
-    .headline h1 { margin: 0; font-size: clamp(36px, 6vw, 72px); letter-spacing: .02em; line-height: 1.05; font-weight: 900; }
+    .headline h1 { margin: 0; font-size: clamp(36px, 6vw, 72px); letter-spacing: .04em; line-height: 1.05; font-weight: 900; }
     .headline p { margin: 0; font-size: 1rem; color: var(--muted); }
-    .patch { font-family: 'Noto Serif TC', serif; color: #fff; background: #111; padding: 6px 14px; font-size: .85rem; font-weight: 700; letter-spacing: .05em; }
+    .patch { font-family: 'Noto Serif TC', serif; color: #fff; background: var(--accent); padding: 6px 14px; font-size: .85rem; font-weight: 700; letter-spacing: .05em; }
 
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
-    .card { position: relative; background: #111; color: #fff; padding: 22px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 12px; overflow: hidden; }
-    .card::before { content: ''; position: absolute; top: -20px; right: -20px; width: 120px; height: 120px; background: var(--accent); opacity: .85; transform: rotate(30deg); }
+    .card { position: relative; background: var(--card-bg); color: var(--text); padding: 22px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 14px; overflow: hidden; border: 1px solid #cad4c5; box-shadow: 0 8px 24px var(--shadow); }
+    .card::before { content: ''; position: absolute; top: -16px; right: -16px; width: 116px; height: 116px; background: rgba(63,105,61,.35); opacity: .9; transform: rotate(30deg); }
     .card h2 { margin: 0 0 8px; font-size: 1.2rem; line-height: 1.1; font-weight: 800; z-index: 1; }
-    .card p { margin: 0 0 6px; z-index: 1; }
-    .card a { z-index: 1; margin-top: 10px; width: max-content; text-decoration: none; color: #111; background: #fff; padding: 8px 14px; border-radius: 8px; font-size: .9rem; font-weight: 700; }
-    .card .tag { color: var(--accent); font-size: .82rem; font-weight: 700; text-transform: uppercase; z-index: 1; }
+    .card p { margin: 0 0 6px; z-index: 1; color: #4a5b4c; }
+    .card a { z-index: 1; margin-top: 10px; width: max-content; text-decoration: none; color: #fff; background: var(--accent); padding: 8px 14px; border-radius: 8px; font-size: .9rem; font-weight: 700; }
+    .card .tag { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .04em; z-index: 1; }
 
     .split { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: start; margin-top: 24px; }
     .split .box { background: #f7f8f8; border: 2px solid #111; border-radius: 16px; padding: 16px; }
@@ -58,10 +60,6 @@
       <article class="card"><span class="tag">乳清蛋白</span><h2>SUPER晚安乳清蛋白</h2><p>蛋白補充兼具助眠修復。</p><a href="乳清蛋白.html">檢視詳情</a></article>
     </div>
 
-    <div class="split">
-      <div class="box"><h2>設計理念</h2><p>大膽對比與不對稱版面，在一體的單頁與產品卡片中傳遞對「功能與形象」的視覺張力。保持健康感同時加入藝術層次。</p></div>
-      <div class="box"><h2>行動優先</h2><p>手機閱讀時改成單欄排列，保持視覺重點與段落節奏，同步保留桌機版的結構張力。</p></div>
-    </div>
   </div>
 </body>
 </html>

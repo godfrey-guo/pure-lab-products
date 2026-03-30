@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EPA精粹深海魚油 - Pure Lab</title>
   <style>
-    :root{--bg:#fff;--text:#111;--accent:#ee7216;--muted:#444;}
+    :root{--bg:#f6f3e8;--card:#fff;--text:#213329;--accent:#3d6a44;--muted:#546252;}
     *{box-sizing:border-box;}
     body{margin:0;background:var(--bg);font-family:'Noto Sans TC', 'Segoe UI', sans-serif;color:var(--text);}
     .wrap{max-width:1180px;margin:0 auto;padding:24px;}
     .top{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;}
-    .top-left{padding:20px;border:2px solid #111;border-radius:16px;background:#fff;}
+    .top-left{padding:20px;border:2px solid #5a755e;border-radius:16px;background:var(--card-bg);}
     .top-left small{display:block;color:var(--accent);font-weight:800;margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em;}
     .top-left h1{margin:0 0 14px;font-size:clamp(32px,4.8vw,60px);line-height:1.05;letter-spacing:.01em;}
     .top-left p{margin:10px 0;font-size:1rem;line-height:1.5;color:var(--muted);}
     .top-left ul{padding-left:20px;margin:14px 0;}
     .top-left li{margin:6px 0;}
-    .btn{display:inline-block; margin-top:14px; padding:10px 16px; background:#111; color:#fff; border-radius:8px; text-decoration:none; font-weight:700;}
+    .btn{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;}
 
-    .card{position:relative;border-radius:16px;overflow:hidden;border:2px solid #111;}
-    .card::after{content:'';position:absolute;top:14px;left:-16px;width:140px;height:140px;background:var(--accent);opacity:.8;transform:rotate(25deg);z-index:1;}
-    .card img{width:100%;height:auto;display:block;mix-blend-mode:multiply;}
+    .card{position:relative;border-radius:16px;overflow:hidden;border:2px solid #5a755e;background:var(--card-bg);box-shadow:0 10px 24px rgba(67,92,73,.2);}
+    .card::after{content:'';position:absolute;top:12px;left:-20px;width:140px;height:140px;background:rgba(61,106,68,.3);opacity:.9;transform:rotate(25deg);z-index:1;}
+    .card img{width:100%;height:auto;display:block;object-fit:cover;}
     .card .overlay{position:absolute;left:0;bottom:12px;padding:10px 14px;background:rgba(255,255,255,.92);border-top-right-radius:12px;z-index:2;}
-    .card .overlay p{margin:0;font-size:.95rem;font-weight:700;color:#111;}
+    .card .overlay p{margin:0;font-size:.95rem;font-weight:700;color:var(--text);}
 
     .section{margin-top:24px;}
-    .section h2{margin:0 0 10px;font-size:1.2rem;letter-spacing:.02em;text-transform:uppercase;color:#111;}
+    .section h2{margin:0 0 10px;font-size:1.2rem;letter-spacing:.02em;text-transform:uppercase;color:var(--text);}
     .section .inner{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-height:210px;}
-    .panel{background:#f6f7f8;border:2px solid #111;border-radius:14px;padding:14px;}
-    .panel h3{margin-top:0;font-size:1rem;color:#111;}
+    .panel{background:#fbfaf4;border:2px solid #c9d3c0;border-radius:14px;padding:14px;}
+    .panel h3{margin-top:0;font-size:1rem;color:var(--text);}
     .panel p{margin:8px 0;color:var(--muted);line-height:1.6;}
 
     @media (max-width:900px){.top{grid-template-columns:1fr;} .section .inner{grid-template-columns:1fr;}}
@@ -73,3 +73,4 @@
   </div>
 </body>
 </html>
+
