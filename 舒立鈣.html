@@ -1,1 +1,59 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>舒立鈣 - 純萃研製所</title>
+  <style>
+    :root{--bg:#f8f4e7;--text:#1f3f2d;--accent:#3f6d46;--muted:#5f6e61;--card:#fff;}
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:'Noto Sans TC','Segoe UI',sans-serif;}
+    .wrap{max-width:1080px;margin:0 auto;padding:18px;}
+    a.back{display:inline-block;margin-bottom:14px;color:var(--accent);font-weight:700;text-decoration:none;}
+    .main{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;}
+    .content{background:var(--card);border:2px solid #c9d5c2;border-radius:14px;padding:20px;}
+    .title{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 10px;font-weight:900;}
+    .subtitle{font-size:1.05rem;color:var(--muted);margin:0 0 12px;}
+    .section{margin-top:14px;}
+    .section h2{font-size:1rem;margin:0 0 8px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;}
+    .section p,.section ul{margin:0;line-height:1.6;color:var(--text);}
+    .section ul{padding-left:18px;margin-top:8px;}
+    .btn{display:inline-block;margin-top:16px;padding:11px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;}
+    .photo{border:2px solid #c9d5c2;border-radius:14px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;padding:10px;}
+    .photo img{width:100%;height:auto;border-radius:12px;display:block;}
+    @media (max-width:767px){
+      .wrap{padding:14px;}
+      .main{grid-template-columns:1fr;}
+      .content{order:3;padding:16px;}
+      .photo{order:2;margin-bottom:12px;padding:12px;}
+      .title{font-size:clamp(24px,8vw,36px);}
+      .subtitle{font-size:.95rem;}
+      .btn{width:100%;text-align:center;padding:13px 14px;font-size:1rem;}
+    }
+    @media (min-width:768px) and (max-width:1023px){
+      .main{grid-template-columns:1fr 1fr;}
+      .title{font-size:clamp(26px,6vw,40px);}
+    }
+    @media (min-width:1024px){
+      .main{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← 回首頁</a>
+    <div class="main">
+      <div class="photo"><img src="舒立鈣-封面.png" alt="舒立鈣" /></div>
+      <div class="content">
+        <h1 class="title">舒立鈣</h1>
+        <p class="subtitle">骨質補充、吸收升級</p>
+        <div class="section"><h2>產品功效</h2><p>支持骨骼健康，促進鈣質吸收與代謝。</p></div>
+        <div class="section"><h2>成分</h2><ul><li>L型乳酸鈣</li><li>碳酸鈣</li><li>SOD蔬果</li><li>益生菌</li></ul></div>
+        <div class="section"><h2>適用族群</h2><p>中老年、成長期青少年、骨質保養者</p></div>
+        <div class="section"><h2>購買方式</h2><p>請至蝦皮搜尋「純萃研製所 舒立鈣」或私訊 LINE 訂購。</p></div>
+        <a class="btn" href="#">立即加入購物車</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
