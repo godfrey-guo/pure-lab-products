@@ -22,8 +22,7 @@
     .btn{display:inline-block;margin-top:16px;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;}
     .photo{border:2px solid #c9d5c2;border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;}
     .photo img{width:100%;height:auto;display:block;}
-    @media (max-width: 767px) {
-      body{padding:0 12px;}
+    @media (max-width: 767px) {\n      body{padding:0 12px;}\n      .main{grid-template-columns:1fr;display:flex;flex-direction:column;gap:16px;}\n      .content{order:3;padding:16px;}\n      .photo{order:2;margin:0;padding:14px;background:#fff;border-radius:14px;box-shadow:0 6px 16px rgba(0,0,0,.08);border:1px solid #dce3da;}\n      .photo img{width:100%;height:auto;border-radius:12px;display:block;}\n      .title{font-size:clamp(24px,8vw,40px);}\n      .subtitle{font-size:0.95rem;}\n      .btn{padding:14px 18px;font-size:1.05rem;}\n    }
       .main{grid-template-columns:1fr;}
       .content{order:2;padding:16px;}
       .photo{order:1;margin-bottom:16px;}
@@ -79,5 +78,6 @@
   </div>
 </body>
 </html>
+
 
 
